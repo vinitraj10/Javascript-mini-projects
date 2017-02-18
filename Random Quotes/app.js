@@ -5,6 +5,7 @@ var total = quotes.length;
 function refresh(){
 	var random = Math.floor((Math.random()* total));
  	document.getElementById("com").innerHTML='<cite>' + quotes[random]+'<small>' + quoted[random] + '</small></cite>';
+ 	
 	console.log(quotes[random]);
 	
 }
