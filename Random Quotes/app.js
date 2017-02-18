@@ -5,8 +5,8 @@ var col = colors.length;
 // Important: keep the number of greets, quotes, and backgrounds the same
 var total = quotes.length;
 function refresh(){
-	var random = Math.floor((Math.random()* total));
-	var rand = Math.floor((Math.random()*colors.length));
+	 random = Math.floor((Math.random()* total));
+	 rand = Math.floor((Math.random()*colors.length));
  	document.getElementById("com").innerHTML='<cite>' + quotes[random]+'<small>' + quoted[random] + '</small></cite>';
  	document.body.style.backgroundColor=colors[rand];
  	document.getElementById("twt").style.color = colors[rand];
@@ -15,6 +15,9 @@ function refresh(){
 	console.log(colors[rand]);
 	
 }
+function tweet() {
+        document.getElementById("mylink").href = "https://twitter.com/intent/tweet?text="+encodeURIComponent('"' + quotes[random] + '" ' + "#"+quoted[random]);
+    }
 /*if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(function(position) {
     $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
