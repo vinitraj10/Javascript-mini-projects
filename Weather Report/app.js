@@ -14,7 +14,7 @@ $.getJSON(getIP).done(function(location) {
 });*/
 	
 // Init
-var openWeatherMap = 'http://api.openweathermap.org/data/2.5/weather'
+var openWeatherMap = 'https://api.openweathermap.org/data/2.5/weather'
 if (window.navigator && window.navigator.geolocation) {
     window.navigator.geolocation.getCurrentPosition(function(position) {
         $.getJSON(openWeatherMap,{
