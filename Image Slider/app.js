@@ -8,6 +8,7 @@ $(document).ready(function(){
     	if(a<0)
     		a=img.length-1;
     	$('#c3').attr('src','img/'+img[a]+'.jpg');
+    	console.log('img/'+img[a]+'.jpg';)
 	});
 
   	$( "#c1" ).click(function() {
@@ -15,6 +16,7 @@ $(document).ready(function(){
     	if(a>img.length-1)
     		a=0;
     	$('#c3').attr('src','img/'+img[a]+'.jpg');
+    	console.log('img/'+img[a]+'.jpg';)
 	});
 
 });
