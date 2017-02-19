@@ -5,4 +5,6 @@
 
 <li>Weather Reporter<br/><a href = "https://vinitraj10.github.io/Javascript-mini-projects/Weather Report/index.html">Demo</a></li>
 
+<li>Image Slider<br/><a href = "https://vinitraj10.github.io/Javascript-mini-projects/Image Slider/index.html">Demo</a></li>
+
 </ul>
